@@ -2,16 +2,17 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Shop usb = new Shop(new int[]{10,22,47});
+        Shop tastatur = new Shop(new int[]{18,32,40});
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int a=tastatur.getCheapTast();//4.1
+        System.out.println(a);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        int b=tastatur.getExpensiveDisp(usb);//4.2
+        System.out.println(b);
+
+        int c=usb.getExpensiveUsb();//4.3
+        System.out.println(c);
     }
+
 }
